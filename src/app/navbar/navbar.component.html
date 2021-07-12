@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" *ngIf = "!authservice.currentUser" >Medic Search</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/userinfo" *ngIf = "authservice.currentUser" ><b style="color: black;"><i class="bi bi-house-door"></i>&nbsp;Home</b> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about"><b style="color: black;"><i class="bi bi-file-earmark-person"></i>&nbsp;About</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contactus"><b style="color: black;"><i class="bi bi-telephone-forward"></i>&nbsp;Contact Us</b></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-success my-2 my-sm-0" type="submit" routerLink="/login" *ngIf = "!authservice.currentUser"><i class="bi bi-box-arrow-in-right"></i>&nbsp;Login</button>
+        <button class="btn btn-danger" (click)="authservice.signout()" *ngIf = "authservice.currentUser"><i class="bi bi-box-arrow-left"></i>&nbsp;Logout</button>
+      </form>
+    </div>
+  </nav>
