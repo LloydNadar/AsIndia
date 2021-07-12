@@ -1,0 +1,24 @@
+<div class="gradient-custom"><br/>
+   
+    <div class="alert alert-success" role="alert">
+            <div class="row justify-content-center">
+                <div class="tetx-info" *ngIf="authservice.currentUser">
+                    <h4><b>Welcome User : </b>{{authservice.currentUserName}}</h4>
+                </div>
+            </div>
+    </div>
+    <body>
+
+      <h1>Search for Doctors</h1>
+      
+      <form action="/action_page.php">
+        <label for="gsearch">GOOGLE search</label>
+        <input type="search" id="gsearch" name="gsearch">
+        <input type="submit">
+      </form>
+      
+      </body>
+  <br/>
+  
+</div>
+<app-footer></app-footer>
