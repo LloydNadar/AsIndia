@@ -1,0 +1,89 @@
+<div class="gradient-custom">
+    <section class="container">
+
+        <h2 class="h1-responsive font-weight-bold text-center">Contact Me</h2>
+
+     
+        <div class="row">
+
+            <div class="col-lg-5 mb-lg-0 mb-4">
+                
+                    <div class="card">
+                        <div class="card-body">
+                           
+                            <div class="form-header blue accent-1">
+                                <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to Me:</h3>
+                            </div>
+
+                            <p class="dark-grey-text">I'll upload rarely, but only the best content.</p>
+                        
+                            <div class="md-form">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <label for="form-name">Your name</label>
+                                <input type="text" id="form-name" class="form-control" [(ngModel)]="customerName" name="Name" required>
+                            </div>
+                            <div class="md-form">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <label for="form-email">Your email</label>
+                                <input type="text" id="form-email" class="form-control" [(ngModel)]="customerEmail" name="Email" required>
+                            </div>
+                            <div class="md-form">
+                                <i class="fas fa-tag prefix grey-text"></i>
+                                <label for="form-Subject">Subject</label>
+                                <input type="text" id="form-Subject" class="form-control" [(ngModel)]="customerSubject" name="Subject" required>
+                            </div>
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                <label for="form-text">Send message</label>
+                                <textarea id="form-text" class="form-control md-textarea" rows="3" [(ngModel)]="customerMessage" name="Message" required></textarea>
+                            </div><br/>
+                            <div class="text-center">
+                                <button class="btn btn-primary" (click)="CreateRd()">Submit</button>
+                            </div><br/>
+                            <div class="form-group text-center">
+                                <b>{{message}}</b>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="col-lg-7">
+
+                <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+                    <iframe
+                        src="https://www.google.co.in/maps/place/Kalyan,+Maharashtra/"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <p>Mumbai, 421301</p>
+                        <p class="mb-md-0">India</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <p>+ 91-7715980069</p>
+                        <p class="mb-md-0">Mon - Fri, 8:00-21:00</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <p>lloydnadar@hotmail.com</p>
+                        <p class="mb-0">lloydnadar@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+         
+        </div>
+       
+    </section>
+    <br />
+</div>
+<app-footer></app-footer>
