@@ -1,0 +1,10 @@
+.bg-light {
+    /* fallback for old browsers */
+    background: #87f762;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(245, 98, 98, 0.85), rgba(248, 244, 5, 0.85));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(245, 98, 98, 0.85), rgba(248, 244, 5, 0.85))
+  }
