@@ -1,0 +1,15 @@
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+    
+  }
+  .gradient-custom {
+    /* fallback for old browsers */
+  background-image: url("src/assets/img/doc.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+  }
+
+  .edge{
+    border-radius: 5%;
+  }
