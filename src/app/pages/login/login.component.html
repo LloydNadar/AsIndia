@@ -1,0 +1,38 @@
+<div class="card gradient-custom">
+    <div class="card-body">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card edge">
+                    <h2 class="card-header text-center"><img src="assets/img/3.png" alt="Avatar"
+                            class="avatar"><br />LOGIN</h2>
+                    <div class="card-body">
+                        <form (ngSubmit)="login()">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" [(ngModel)]="email"
+                                    placeholder="Enter email Id" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" class="form-control" [(ngModel)]="password"
+                                    placeholder="Enter Password" required>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                            <div class="register"><a href="#" routerLink="/register">New User Register</a></div>
+                        </form>
+                        <div class="form-group">
+                            <p *ngIf="errorMessage.length > 0" class="text-danger">
+                                {{errorMessage}}</p>
+
+                            <p *ngIf="error.message.length > 0" class="text-danger">
+                                {{error.message}} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
